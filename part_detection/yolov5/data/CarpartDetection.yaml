@@ -1,0 +1,10 @@
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+train: /workspace/data/Carpart_10yolo_data/images/train/
+val:   /workspace/data/Carpart_10yolo_data/images/valid/
+test:  /workspace/data/Carpart_10yolo_data/images/test/
+
+# number of classes
+nc: 15
+
+# class names
+names: ['car','Front bumper', 'Rear bumper', 'Wheel', 'A Pillar', 'C Pillar', 'Side mirror', 'Front door', 'Back door', 'Radiator grill', 'Head lamp', 'Rear lamp', 'Bonnet', 'Trunk', 'Roof']

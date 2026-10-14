@@ -1,0 +1,22 @@
+# 가상환경 / 캐시
+venv*/
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
+
+# 데이터 · 가중치 · 학습 결과 (AI Hub에서 별도 다운로드)
+/data/
+*.pt
+*.pth
+*.bin
+*.npz
+*.csv
+runs/
+logs/
+tensorboard/
+output/
+*.log
+
+# setup.sh가 clone하는 외부 저장소
+vehicle_classification/apex/
