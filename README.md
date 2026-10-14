@@ -66,8 +66,17 @@ python main.py --eval y --task damage --dataset test
 
 데이터와 가중치는 `../data/` 아래(`datainfo/`, `Dataset/1.원천데이터/`, `weight/`, `result_log/`)에 있다고 가정합니다.
 
-## 출처
+## 출처 및 이용 안내
 
-- TransFG: He et al., *TransFG: A Transformer Architecture for Fine-grained Recognition*, 2021 — https://github.com/TACJu/TransFG
-- YOLOv5: Ultralytics — https://github.com/ultralytics/yolov5
-- 데이터: AI Hub 「차량외관 영상 데이터」, 「차량 파손 이미지」
+이 저장소의 코드는 [AI Hub](https://www.aihub.or.kr)에서 「차량외관 영상 데이터」, 「차량 파손 이미지」 데이터셋과 함께 제공된 소스코드를 바탕으로 합니다. 수업(컴퓨터비전 미니프로젝트 #1) 과제 제출을 위한 **교육·비상업 목적**으로만 올렸습니다.
+
+- 원 코드의 저작권은 각 저작자와 AI Hub 데이터 구축 기관에 있습니다.
+- 데이터, 이미지, 라벨, 학습 가중치는 포함하지 않았습니다. 데이터는 AI Hub에서 이용 신청 후 받아야 하며, AI Hub 이용약관을 따릅니다.
+- 권리자의 요청이 있으면 해당 코드를 즉시 삭제하겠습니다.
+
+| 구성 요소 | 원 출처 | 라이선스 |
+| --- | --- | --- |
+| `vehicle_classification/` | [TransFG](https://github.com/TACJu/TransFG) — He et al., *TransFG: A Transformer Architecture for Fine-grained Recognition*, 2021 (AI Hub 차종 분류용 수정본) | MIT (`vehicle_classification/LICENSE`) |
+| `part_detection/yolov5/` | [Ultralytics YOLOv5](https://github.com/ultralytics/yolov5) (AI Hub 부품 탐지 설정 추가) | GPL-3.0 (`part_detection/yolov5/LICENSE`) |
+| `part_detection/prepare_dataset/` | AI Hub 「차량외관 영상 데이터」 제공 코드 | 별도 표기 없음 |
+| `damage_segmentation/` | AI Hub 「차량 파손 이미지」 제공 코드, [segmentation_models_pytorch](https://github.com/qubvel/segmentation_models.pytorch) 사용 | 별도 표기 없음 |
